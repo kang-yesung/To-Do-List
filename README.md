@@ -22,6 +22,6 @@
 
 ---
 
-### 다크크모드
+### 다크모드
 
 <img src="https://github.com/user-attachments/assets/fb23d12a-0539-447a-8801-72a420057449"  height="490px"></img>
