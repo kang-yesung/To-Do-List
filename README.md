@@ -12,16 +12,14 @@
 
 ## 플로우차트
 
-![Image](https://github.com/user-attachments/assets/2a4b53cb-3550-4958-aa69-d13f85f637b9)
-
----
+<img src="https://github.com/user-attachments/assets/2a4b53cb-3550-4958-aa69-d13f85f637b9"  height="350px"></img>
 
 ### reset
 
-![Image](https://github.com/user-attachments/assets/fd7e738a-19b1-4cfc-90ba-a09eb13b1115)
+<img src="https://github.com/user-attachments/assets/fd7e738a-19b1-4cfc-90ba-a09eb13b1115"  height="350px"></img>
 
 ---
 
 ### 다크크모드
 
-![Image](https://github.com/user-attachments/assets/fb23d12a-0539-447a-8801-72a420057449)
+<img src="https://github.com/user-attachments/assets/fb23d12a-0539-447a-8801-72a420057449"  height="425px"></img>
