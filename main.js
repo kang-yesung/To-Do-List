@@ -116,18 +116,15 @@ function saveItems() {
   //itemsArr 배열을 생성하여, 이 배열에 할 일 목록을 저장
   document.querySelectorAll(".item").forEach((item) => {
     //document.querySelectorAll(".item")는 모든 .item 클래스를 가진 요소를 찾아서
-    // 배열처럼 순회할 수 있도록 반환합니다. forEach 메서드를 사용하여
-    // 각 항목(item)을 하나씩 처리합니다.
+    // 배열처럼 순회할 수 있도록 반환
     const text = item.querySelector("span").textContent;
-    //각 .item 요소 안에 있는 span 요소의 텍스트(textContent)를 가져옵니다.
-    // 이 텍스트는 할 일 목록의 내용이 됩니다.
     const isDone = item.classList.contains("item_done");
     //.item 요소에 item_done 클래스가 포함되어 있는지 확인하여,
-    // 완료 상태(isDone)를 boolean 값으로 반환합니다.
-    // item_done 클래스가 있으면 할 일이 완료된 것으로 간주합니다.
+    // 완료 상태(isDone)를 boolean 값으로 반환
+    // item_done 클래스가 있으면 할 일이 완료된 것으로 간주
     itemsArr.push({ text, isDone });
     //text와 isDone 값을 객체로 묶어서 itemsArr 배열에 추가합니다.
-    // 각 항목은 { text: "항목 내용", isDone: true/false } 형식의 객체로 저장됩니다.
+    // 각 항목은 { text: "항목 내용", isDone: true/false } 형식의 객체로 저장
   });
   localStorage.setItem("todoitem", JSON.stringify(itemsArr));
   //itemsArr 배열을 JSON.stringify()를 사용하여 JSON 형식의 문자열로 변환한 뒤,
@@ -136,17 +133,14 @@ function saveItems() {
 
 function loadItems() {
   const saveItems = JSON.parse(localStorage.getItem("todoitem"));
-  //localStorage.getItem("todoitem")을 사용하여 todoitem이라는 키로 저장된 데이터를 가져옵니다.
+  //localStorage.getItem("todoitem")을 사용하여 todoitem이라는 키로 저장된 데이터를 가져온다
   // 이 데이터는 문자열 형태로 저장되어 있기 때문에,
-  // JSON.parse()를 사용해 다시 객체나 배열로 변환합니다.
+  // JSON.parse()를 사용해 다시 객체나 배열로 변환
   // 변환된 데이터는 saveItems 변수에 저장
   if (saveItems) {
     saveItems.forEach(({ text, isDone }) => {
-      //saveItems는 배열 형식이기 때문에, forEach를 사용하여 배열의 각 항목에 대해 반복
-      //각 항목은 객체 형식으로, { text, isDone }의 두 속성을 가지고 있습니다.
-      //text는 할 일의 내용이고, isDone은 해당 항목이 완료되었는지 여부를 나타냅니다.
       const newItem = createItem(text);
-      //createItem(text) 함수가 호출되어 새로운 할 일 항목(newItem)을 생성합니다.
+      //createItem(text) 함수가 호출되어 새로운 할 일 항목(newItem)을 생성
       // createItem 함수는 할 일의 텍스트를 받아 li 요소를 만들어 반환
       if (isDone) {
         newItem.classList.add("item_done"); // 완료된 아이템으로 표시
@@ -157,22 +151,5 @@ function loadItems() {
     });
   }
 }
-
-// function saveItems() {
-//   const itmsArr = [];
-//   document.querySelectorAll(".item").forEach((item) => {
-//     itmsArr.push(item.querySelector("span").textContent);
-//   });
-//   localStorage.setItem("todoitems", JSON.stringify(itmsArr));
-// }
-
-// function loadItems() {
-//   const saveItems = JSON.parse(localStorage.getItem("todoitems"));
-//   if (saveItems) {
-//     saveItems.forEach((itemText) => {
-//       items.appendChild(createItem(itemText));
-//     });
-//   }
-// }
 
 window.onload = loadItems;
