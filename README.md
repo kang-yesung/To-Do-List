@@ -12,16 +12,16 @@
 
 ## 플로우차트
 
-![alt](/todo/제목%20없는%20다이어그램.jpg)
+![Image](https://github.com/user-attachments/assets/2a4b53cb-3550-4958-aa69-d13f85f637b9)
 
 ---
 
 ### reset
 
-![alt](</todo/제목%20없는%20동영상%20-%20Clipchamp로%20제작%20(1).gif>)
+![Image](https://github.com/user-attachments/assets/fd7e738a-19b1-4cfc-90ba-a09eb13b1115)
 
 ---
 
 ### 다크크모드
 
-![alt](</todo/제목%20없는%20동영상%20-%20Clipchamp로%20제작%20(2).gif>)
+![Image](https://github.com/user-attachments/assets/fb23d12a-0539-447a-8801-72a420057449)
