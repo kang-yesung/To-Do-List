@@ -27,3 +27,5 @@
 ### 다크모드
 
 <img src="https://github.com/user-attachments/assets/8f633620-9770-4713-83ce-8746887c2d0c"  height="600px"></img>
+
+# todo vue 컴포넌트 나누기 및 레파지토리 및 일정 작성, 삭제버튼 기능 구현
